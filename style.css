@@ -55,17 +55,26 @@ input{
     gap: 5px;
     font-weight: bold;
 }
-.Grass{
+.grass{
     background-color: rgb(11, 155, 11);
 }
-.Fire{
+.fire{
     background-color: rgb(233, 14, 14);
 }
-.Poison{
+.poison{
     background-color: rgb(145, 6, 145);
 }
-.Flying{
+.flying{
     background-color: gray;
+}
+.bug{
+    background-color: rgb(14, 236, 21);;
+}
+.normal{
+    background-color: rgb(210, 209, 209);
+}
+.water{
+    background-color: rgb(16, 161, 218);
 }
 .photo{
     padding-top: 20px;

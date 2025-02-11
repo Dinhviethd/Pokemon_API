@@ -1,5 +1,6 @@
 
 const container= document.querySelector(".content");
+const searchBar_Infor= document.querySelector(".SearchBar input");
 async function loadPokemon(){
     showLoading();
     const response= await fetch(`https://pokeapi.co/api/v2/pokemon`);
@@ -9,6 +10,10 @@ async function loadPokemon(){
     for (let i=0; i<arr.length; i++){
         const response2= await fetch(arr[i].url)
         const info= await response2.json();
+        const typeHTML= info.types.map((typeNames) => {
+            const typeName= typeNames.type.name;
+            return `<span class="Type ${typeName}">${typeName}</span>`
+        }).join("");
         HTML+= `<div class="Pokemon">
             <span style="margin-left: 40%">#${info.id} <br></span>
             <img class="photo"
@@ -16,12 +21,15 @@ async function loadPokemon(){
                 alt="${info.name}">
             <h3>${info.name}</h3>
             <div class="Element">
-                <span class="Type Grass">Grass</span>
-                <span class="Type Poison">Poison</span>
+                ${typeHTML}
             </div>
         </div>`;
         container.innerHTML= HTML;
     }
+}
+function searchPokemon(){
+    const infor= searchBar_Infor.value;
+    
 }
 function showLoading() {
     const loading_screen= "<p>Getting Data From Pokedeck...</p>"
