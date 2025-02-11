@@ -1,0 +1,83 @@
+*{
+    font-family: Arial;
+}
+.header{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(4, 4, 80);
+    font-weight: lighter;
+}
+input{
+    border-radius: 30px;
+    padding: 15px;
+    width: 400px;
+    margin: 30px 0;
+    box-shadow: 0 2px 8px var(--black);
+    border: 1px solid var(--black);
+}
+.SearchBar{
+    text-align: center;
+}
+.Pokemon{
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    box-shadow: 0 2px 8px var(--black);
+    width: 200px;
+    margin-bottom: 30px;
+}
+.Pokemon img{
+    position:relative;
+    left: 10px;
+    width: 200px;
+    height: auto;
+}
+.Pokemon h3{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.Pokemon span{
+    color: rgb(4, 4, 80);
+    font-size: larger;
+}
+.content p{
+    font-size: 30px;
+    color: gray;
+}
+.Type{
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+.Element{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-weight: bold;
+}
+.Grass{
+    background-color: rgb(11, 155, 11);
+}
+.Fire{
+    background-color: rgb(233, 14, 14);
+}
+.Poison{
+    background-color: rgb(145, 6, 145);
+}
+.Flying{
+    background-color: gray;
+}
+.photo{
+    padding-top: 20px;
+    height: 100px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap; 
+}
+
+:root{
+    --black: rgba(0, 0, 0, 0.2); 
+}
